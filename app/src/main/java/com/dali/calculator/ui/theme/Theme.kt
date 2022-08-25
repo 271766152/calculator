@@ -22,7 +22,7 @@ fun ReplacementTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Compo
             MaterialTheme(
                 content = {
                     // A surface container using the 'background' color from the theme
-                    Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background, content = content)
+                    Surface(modifier = Modifier.fillMaxSize(), color = LocalReplacementColor.current.backgroundColor, content = content)
                 }
             )
         })
